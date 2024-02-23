@@ -1,4 +1,4 @@
-# Using Azure OpenAI Endpoints Natively in Fabric
+# Using Azure OpenAI Endpoints Natively in Microsoft Fabric
 
 A useful feature in Microsoft Fabric is the ability to use some Azure AI services, like Azure OpenAI, directly in Fabric without having to deploy a separate endpoint. Per the Fabric documentation, "Fabric seamlessly integrates with Azure AI services, allowing you to enrich your data with prebuilt AI models without any prerequisite. We recommend using this option as you can utilize your Fabric authentication to access AI services, and all usage are billed against your Fabric capacity. This option is currently in public preview with limited AI services available.
 
@@ -27,16 +27,35 @@ You should see the file show up in the Files section of the Lakehouse if the upl
 ![image](https://github.com/danhas14/Fabric_AzureOpenAI_Example/assets/27227060/5338857e-3e02-40e9-9944-a0fda6db9c20)
 
 Now right click on the file and select 'Load to Tables' to load the data into a Fabric lakehouse table.
+
 ![image](https://github.com/danhas14/Fabric_AzureOpenAI_Example/assets/27227060/d51831d2-3eff-45b8-a932-c5553a4dcc03)
 
 Select 'Load'
+
 ![image](https://github.com/danhas14/Fabric_AzureOpenAI_Example/assets/27227060/7800b110-9dea-4a47-be08-1c2968ccd78e)
 
-Now select the Tables folder in the lakehouse and right click and select 'Refresh'. There should be a new mcdonalds_reviews table created from the CSV. Note the table will have blanks in the review_topic column and review_sentiment columns. We will have OpenAI populate the data for those columns in just a minute.
+Now select the Tables folder in the lakehouse and right click and select 'Refresh'. There should be a new mcdonalds_reviews table created from the CSV. 
+
 ![image](https://github.com/danhas14/Fabric_AzureOpenAI_Example/assets/27227060/51c63f53-d27e-414d-9b25-27e653fbfeaa)
 
+Note the table will have blanks in the review_topic column and review_sentiment columns. We will have OpenAI populate the data for those columns in just a minute.
 
 ![image](https://github.com/danhas14/Fabric_AzureOpenAI_Example/assets/27227060/8246548d-1e97-43d8-8d78-24e88079c42c)
+
+Now download the attached file 'Fabric OpenAI Restaurant Reviews.ipynb'. 
+
+Next select the icon on the bottom left side of the Fabric UI and select 'Data Engineering'. Once in the Data Engineering area of Fabric, select the 'Import Notebook' icon. Select the 'Upload' icon to select the Fabric OpenAI Restaurant Reviews.ipynb file you just downloaded. 
+
+<img width="623" alt="image" src="https://github.com/danhas14/Fabric_AzureOpenAI_Example/assets/27227060/f6395566-faf0-4648-92f7-abcd45294e2d">
+
+Now select and open the notebook you just imported. 
+
+![image](https://github.com/danhas14/Fabric_AzureOpenAI_Example/assets/27227060/a4f23d37-c29f-401e-bd14-7e4cdc2281e9)
+
+On the left hand side, select 'Lakehouses' to associate our Reviews_Lakehouse with the notebook.
+
+![image](https://github.com/danhas14/Fabric_AzureOpenAI_Example/assets/27227060/f901e8e7-73cc-4163-a2cc-fe73798585c6)
+
 
 
 ![image](https://github.com/danhas14/Fabric_AzureOpenAI_Example/assets/27227060/5fca0ec0-00a0-4416-ad4c-c807a6ed6638)
