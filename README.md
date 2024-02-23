@@ -67,13 +67,13 @@ Next, select the icon on the bottom left side of the Fabric UI and select 'Data 
 Now select and open the notebook you just imported to open it in Fabric. 
 
 
-![image](https://github.com/danhas14/Fabric_AzureOpenAI_Example/assets/27227060/a4f23d37-c29f-401e-bd14-7e4cdc2281e9)
+<img width="524" alt="image" src="https://github.com/danhas14/Fabric_AzureOpenAI_Example/assets/27227060/76a6a98a-6686-4ef7-8539-4cd89dfdd2df">
 
 
 On the left hand side, select 'Lakehouses' to associate our Reviews_Lakehouse with the notebook. At the prompt, select 'Existing Lakehouse', then 'Reviews_Lakehouse'. You should see something like below:
 
 
-![image](https://github.com/danhas14/Fabric_AzureOpenAI_Example/assets/27227060/f901e8e7-73cc-4163-a2cc-fe73798585c6)
+![image](https://github.com/danhas14/Fabric_AzureOpenAI_Example/assets/27227060/3808071a-a26b-4163-9870-43b291a94bba)
 
 
 Now run the first 3 cells in the notebook one at a time. Note it may take a minute for the Fabric Spark engine to initialize the first time you run it. The first cell will import the OpenAI library used in the notebook while the second cell will specify some categories we want Azure OpenAI to use to categorize the reviews. The 3rd cell will load the data from our lakehouse table into a Spark dataframe.
