@@ -11,10 +11,10 @@ To start, open up Microsoft Fabric and create a new Lakehouse by selecting 'Crea
 <img width="929" alt="image" src="https://github.com/danhas14/Fabric_AzureOpenAI_Example/assets/27227060/f3f6cacc-7095-4e53-a978-d4c12911bc54">
 
 
+For the name of the Lakehouse, type Reviews_Lakehouse as shown below:
 
+![image](https://github.com/danhas14/Fabric_AzureOpenAI_Example/assets/27227060/40f25173-1441-47cb-8db2-f8c4304b2df4)
 
-
-![image](https://github.com/danhas14/Fabric_AzureOpenAI_Example/assets/27227060/2a1a1531-cf9e-4b8c-8465-95faa8ba2e3c)
 
 
 ![image](https://github.com/danhas14/Fabric_AzureOpenAI_Example/assets/27227060/032b59bd-cf55-42ed-a109-8160986e0af5)
