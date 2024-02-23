@@ -11,25 +11,30 @@ To start, open up Microsoft Fabric and create a new Lakehouse by selecting 'Crea
 <img width="929" alt="image" src="https://github.com/danhas14/Fabric_AzureOpenAI_Example/assets/27227060/f3f6cacc-7095-4e53-a978-d4c12911bc54">
 
 
-For the name of the Lakehouse, type Reviews_Lakehouse as shown below:
+For the name of the Lakehouse, type Reviews_Lakehouse as shown below and then hit Create:
 
 ![image](https://github.com/danhas14/Fabric_AzureOpenAI_Example/assets/27227060/40f25173-1441-47cb-8db2-f8c4304b2df4)
 
-
+Now lets upload some data we can use in the lakehouse. See the attached CSV file McDonalds Reviews and download it to your desktop. Once you do that, go back to your new Fabric Lakehouse and upload the data as shown in the following picture by selecting 'Upload Files':
 
 ![image](https://github.com/danhas14/Fabric_AzureOpenAI_Example/assets/27227060/032b59bd-cf55-42ed-a109-8160986e0af5)
 
+Select the file you just downloaded to upload:
+
 ![image](https://github.com/danhas14/Fabric_AzureOpenAI_Example/assets/27227060/5b760906-90c2-4f08-a007-42f037986ddf)
 
-
+You should see the file show up in the Files section of the Lakehouse if the upload was successful:
 ![image](https://github.com/danhas14/Fabric_AzureOpenAI_Example/assets/27227060/5338857e-3e02-40e9-9944-a0fda6db9c20)
 
-
+Now right click on the file and select 'Load to Tables' to load the data into a Fabric lakehouse table.
 ![image](https://github.com/danhas14/Fabric_AzureOpenAI_Example/assets/27227060/d51831d2-3eff-45b8-a932-c5553a4dcc03)
 
+Select 'Load'
 ![image](https://github.com/danhas14/Fabric_AzureOpenAI_Example/assets/27227060/7800b110-9dea-4a47-be08-1c2968ccd78e)
 
+Now select the Tables folder in the lakehouse and right click and select 'Refresh'. There should be a new mcdonalds_reviews table created from the CSV. Note the table will have blanks in the review_topic column and review_sentiment columns. We will have OpenAI populate the data for those columns in just a minute.
 ![image](https://github.com/danhas14/Fabric_AzureOpenAI_Example/assets/27227060/51c63f53-d27e-414d-9b25-27e653fbfeaa)
+
 
 ![image](https://github.com/danhas14/Fabric_AzureOpenAI_Example/assets/27227060/8246548d-1e97-43d8-8d78-24e88079c42c)
 
