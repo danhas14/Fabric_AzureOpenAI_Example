@@ -76,10 +76,10 @@ On the left hand side, select 'Lakehouses' to associate our Reviews_Lakehouse wi
 ![image](https://github.com/danhas14/Fabric_AzureOpenAI_Example/assets/27227060/3808071a-a26b-4163-9870-43b291a94bba)
 
 
-Now run the first 3 cells in the notebook one at a time. Note it may take a minute for the Fabric Spark engine to initialize the first time you run it. The first cell will import the OpenAI library used in the notebook while the second cell will specify some categories we want Azure OpenAI to use to categorize the reviews. The 3rd cell will load the data from our lakehouse table into a Spark dataframe.
+Now run the first 3 cells in the notebook one at a time. Note it may take a minute for the Fabric Spark engine to initialize the first time you run it. The first cell will import the OpenAI library used in the notebook while the second cell will specify some categories we want Azure OpenAI to use to categorize the reviews. The third cell will load the data from our lakehouse table into a Spark dataframe.
 
 
-![image](https://github.com/danhas14/Fabric_AzureOpenAI_Example/assets/27227060/b1e7f7b2-74c6-4167-a6da-c299689676eb)
+![image](https://github.com/danhas14/Fabric_AzureOpenAI_Example/assets/27227060/5366ccb4-f321-40ee-8f14-46a6cf6781bb)
 
 
 Now run the fourth cell. This cell will loop through each row in the table and then ask Azure OpenAI to provide any topics relevant to the review along with an overall sentiment. You can see the prompt, or instructions, provided to Azure OpenAI on line 25-31 of the cell. Note we didn't have to provide an Azure OpenAI URL to call or a key since Fabric takes care of all of that for us. We just provide the Azure OpenAI model we want to use, which is gpt-35-turbo in this case. Lines 78-84 of the notebook do a Delta 'merge' command to merge the topics and sentiment returned by Azure OpenAI back into the existing table based using the unique _unit_id column as a key.
@@ -88,7 +88,7 @@ Now run the fourth cell. This cell will loop through each row in the table and t
 ![image](https://github.com/danhas14/Fabric_AzureOpenAI_Example/assets/27227060/17933fcf-f909-4d31-8f3a-697a598ff9ad)
 
 
-The fifth cell does a select from the table again, which now shows our updated rows based on the updates from Azure OpenAI.
+Now run the fifth cell, which does a select from the table again, which now shows our updated rows based on the updates from Azure OpenAI.
 
 
 ![image](https://github.com/danhas14/Fabric_AzureOpenAI_Example/assets/27227060/f9ec18f9-3349-42ad-b086-14d594f37301)
@@ -106,6 +106,8 @@ On the top right side there is a drop-down where it says 'Lakehouse'. From the d
 ![image](https://github.com/danhas14/Fabric_AzureOpenAI_Example/assets/27227060/ccbdad5b-cb90-4561-8f86-8ade7ff7752c)
 
 In the SQL Analytics Endpoint you can run queries on the data, but for now just select the 'New Report' option. This will open the Power BI report development environment
+
+<img width="957" alt="image" src="https://github.com/danhas14/Fabric_AzureOpenAI_Example/assets/27227060/e3b34efd-1dbe-4ad1-a707-541a88864e53">
 
 ![image](https://github.com/danhas14/Fabric_AzureOpenAI_Example/assets/27227060/55b2dcc0-7873-4807-b92b-ccc60fb04416)
 
