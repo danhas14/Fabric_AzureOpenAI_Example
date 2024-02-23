@@ -1,12 +1,18 @@
-# Using Azure OpenAI endpoints natively in Fabric
+# Using Azure OpenAI Endpoints Natively in Fabric
 
-A useful feature in Microsoft Fabric is the ability to use some Azure AI services, like Azure OpenAI, directly in Fabric without having to deploy a separate endpoint. Per the documentation, "Fabric seamlessly integrates with Azure AI services, allowing you to enrich your data with prebuilt AI models without any prerequisite. We recommend using this option as you can utilize your Fabric authentication to access AI services, and all usage are billed against your Fabric capacity. This option is currently in public preview with limited AI services available.
+A useful feature in Microsoft Fabric is the ability to use some Azure AI services, like Azure OpenAI, directly in Fabric without having to deploy a separate endpoint. Per the Fabric documentation, "Fabric seamlessly integrates with Azure AI services, allowing you to enrich your data with prebuilt AI models without any prerequisite. We recommend using this option as you can utilize your Fabric authentication to access AI services, and all usage are billed against your Fabric capacity. This option is currently in public preview with limited AI services available.
 
 https://learn.microsoft.com/en-us/fabric/data-science/ai-services/ai-services-overview
 
 This tutorial will walk you through implementing a simple use-case leveraging the Fabric native Azure OpenAI endpoint. 
 
-To start, open up Microsoft Fabric and create a new Lakehouse by select ing
+To start, open up Microsoft Fabric and create a new Lakehouse by selecting 'Create' in the top left hand corner and then selecting 'Lakehouse' as shown in the image
+
+<img width="929" alt="image" src="https://github.com/danhas14/Fabric_AzureOpenAI_Example/assets/27227060/f3f6cacc-7095-4e53-a978-d4c12911bc54">
+
+
+
+
 
 ![image](https://github.com/danhas14/Fabric_AzureOpenAI_Example/assets/27227060/2a1a1531-cf9e-4b8c-8465-95faa8ba2e3c)
 
