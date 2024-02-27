@@ -47,7 +47,7 @@ Select 'Load'
 Now select the Tables folder in the lakehouse and right click and select 'Refresh'. There should be a new mcdonalds_reviews table created from the CSV. 
 
 
-![image](https://github.com/danhas14/Fabric_AzureOpenAI_Example/assets/27227060/51c63f53-d27e-414d-9b25-27e653fbfeaa)
+https://github.com/danhas14/Fabric_AzureOpenAI_Example/blob/main/README.md
 
 
 Note the table will have blanks in the review_topic column and review_sentiment columns. We will have OpenAI populate the data for those columns in just a minute.
@@ -55,11 +55,14 @@ Note the table will have blanks in the review_topic column and review_sentiment 
 
 ![image](https://github.com/danhas14/Fabric_AzureOpenAI_Example/assets/27227060/8246548d-1e97-43d8-8d78-24e88079c42c)
 
+
 Now we need to get the location of the table to use it in our notebook. To do that, right click on the table and select 'Properties'.
+
 
 ![image](https://github.com/danhas14/Fabric_AzureOpenAI_Example/assets/27227060/28d4c2b5-e081-46a8-bb39-90e8aa725687)
 
-Now copy the last property called 'ABFS path' as shown below. Save the path in a text file to be used later. 
+
+Now copy the last property on the right called 'ABFS path' as shown below. Save the path in a text file to be used later. 
 
 
 ![image](https://github.com/danhas14/Fabric_AzureOpenAI_Example/assets/27227060/9efa9cc6-9ade-45c8-adb4-2e1f55ec8b72)
