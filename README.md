@@ -4,7 +4,7 @@ A useful feature in Microsoft Fabric is the ability to use some Azure AI service
 
 https://learn.microsoft.com/en-us/fabric/data-science/ai-services/ai-services-overview
 
-This tutorial will walk you through implementing a simple use-case leveraging the Fabric native Azure OpenAI endpoint. Note that you will need a workspace in a Power BI Premium capacity or a Fabric F-SKU in order to use the built-in Azure AI services.
+This tutorial will walk you through implementing a simple use-case leveraging the Fabric native Azure OpenAI endpoint. Note that you will need a workspace in a Power BI Premium capacity or a Fabric F-SKU (F64 and above) in order to use the built-in Azure AI services.
 
 To start, open up Microsoft Fabric and create a new Lakehouse by selecting 'Create' in the top left hand corner and then selecting 'Lakehouse' as shown in the image
 
