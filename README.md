@@ -83,7 +83,7 @@ On the left hand side, select 'Lakehouses' to associate our Reviews_Lakehouse wi
 
 ![image](https://github.com/danhas14/Fabric_AzureOpenAI_Example/assets/27227060/3808071a-a26b-4163-9870-43b291a94bba)
 
-In the first cell, paste the URL you copied to the text file above as the value for the 'lakehouse_table' variable as shown below:
+In the first cell of the notebook, paste the URL you copied to the text file above as the value for the 'lakehouse_table' variable as shown below:
 
 ![image](https://github.com/danhas14/Fabric_AzureOpenAI_Example/assets/27227060/582a6e2a-6b8e-4e54-917c-d3ae412352f3)
 
