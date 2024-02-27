@@ -55,6 +55,15 @@ Note the table will have blanks in the review_topic column and review_sentiment 
 
 ![image](https://github.com/danhas14/Fabric_AzureOpenAI_Example/assets/27227060/8246548d-1e97-43d8-8d78-24e88079c42c)
 
+Now we need to get the location of the table to use it in our notebook. To do that, right click on the table and select 'Properties'.
+
+![image](https://github.com/danhas14/Fabric_AzureOpenAI_Example/assets/27227060/28d4c2b5-e081-46a8-bb39-90e8aa725687)
+
+Now copy the last property called 'ABFS path' as shown below. Save the path in a text file to be used later. 
+
+
+![image](https://github.com/danhas14/Fabric_AzureOpenAI_Example/assets/27227060/9efa9cc6-9ade-45c8-adb4-2e1f55ec8b72)
+
 
 Now download the attached file 'Fabric OpenAI Restaurant Reviews.ipynb'. 
 
@@ -74,6 +83,11 @@ On the left hand side, select 'Lakehouses' to associate our Reviews_Lakehouse wi
 
 
 ![image](https://github.com/danhas14/Fabric_AzureOpenAI_Example/assets/27227060/3808071a-a26b-4163-9870-43b291a94bba)
+
+In the first cell, paste the URL you copied to the text file above as the value for the 'lakehouse_table' variable as shown below:
+
+![image](https://github.com/danhas14/Fabric_AzureOpenAI_Example/assets/27227060/51330781-d83e-4d7b-a9c6-33e2533fe136)
+
 
 
 Now run the first 3 cells in the notebook one at a time. Note it may take a minute for the Fabric Spark engine to initialize the first time you run it. The first cell will import the OpenAI library used in the notebook while the second cell will specify some categories we want Azure OpenAI to use to categorize the reviews. The third cell will load the data from our lakehouse table into a Spark dataframe.
