@@ -1,4 +1,4 @@
-# Using Azure OpenAI Endpoints natively in Microsoft Fabric
+# Using Azure OpenAI endpoints natively in Microsoft Fabric
 
 A useful feature in Microsoft Fabric is the ability to use Azure AI services, like Azure OpenAI, directly in Fabric without having to deploy a separate endpoint or service. Per the Fabric documentation, *"Fabric seamlessly integrates with Azure AI services, allowing you to enrich your data with prebuilt AI models without any prerequisite. We recommend using this option as you can utilize your Fabric authentication to access AI services, and all usage are billed against your Fabric capacity.* This solution is currently in public preview.
 
