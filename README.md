@@ -2,9 +2,8 @@
 
 
 <p align="center">
-![image](https://github.com/danhas14/Fabric_AzureOpenAI_Example/assets/27227060/674336f3-f654-4b22-bc6e-5e6828283290)
+  <img src="https://github.com/danhas14/Fabric_AzureOpenAI_Example/assets/27227060/674336f3-f654-4b22-bc6e-5e6828283290" alt="Your image description" />
 </p>
-
 A useful feature in Microsoft Fabric is the ability to use Azure AI services, like Azure OpenAI, directly in Fabric without having to deploy a separate endpoint or service. Per the Fabric documentation, *"Fabric seamlessly integrates with Azure AI services, allowing you to enrich your data with prebuilt AI models without any prerequisite. We recommend using this option as you can utilize your Fabric authentication to access AI services, and all usage are billed against your Fabric capacity.* This solution is currently in public preview.
 
 https://learn.microsoft.com/en-us/fabric/data-science/ai-services/ai-services-overview
