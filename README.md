@@ -117,7 +117,7 @@ On the top right side there is a drop-down where it says 'Lakehouse'. From the d
 
 ![image](https://github.com/danhas14/Fabric_AzureOpenAI_Example/assets/27227060/ccbdad5b-cb90-4561-8f86-8ade7ff7752c)
 
-In the SQL Analytics Endpoint you can run queries on the data, but for now just select the 'New Report' option. This will open the Power BI report development environment
+In the SQL Analytics Endpoint you can run queries on the data, but for now just select the 'New Report' option. This will open the Power BI report development environment where you can create a report using the data in the table.
 
 <img width="957" alt="image" src="https://github.com/danhas14/Fabric_AzureOpenAI_Example/assets/27227060/e3b34efd-1dbe-4ad1-a707-541a88864e53">
 
