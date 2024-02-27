@@ -1,6 +1,6 @@
 # Using Azure OpenAI Endpoints Natively in Microsoft Fabric
 
-A useful feature in Microsoft Fabric is the ability to use some Azure AI services, like Azure OpenAI, directly in Fabric without having to deploy a separate endpoint or service. Per the Fabric documentation, "Fabric seamlessly integrates with Azure AI services, allowing you to enrich your data with prebuilt AI models without any prerequisite. We recommend using this option as you can utilize your Fabric authentication to access AI services, and all usage are billed against your Fabric capacity. This option is currently in public preview with limited AI services available.
+A useful feature in Microsoft Fabric is the ability to use some Azure AI services, like Azure OpenAI, directly in Fabric without having to deploy a separate endpoint or service. Per the Fabric documentation, *"Fabric seamlessly integrates with Azure AI services, allowing you to enrich your data with prebuilt AI models without any prerequisite. We recommend using this option as you can utilize your Fabric authentication to access AI services, and all usage are billed against your Fabric capacity.* This option is currently in public preview with limited AI services available.
 
 https://learn.microsoft.com/en-us/fabric/data-science/ai-services/ai-services-overview
 
@@ -89,8 +89,7 @@ On the left hand side, select 'Lakehouses' to associate our Reviews_Lakehouse wi
 
 In the first cell, paste the URL you copied to the text file above as the value for the 'lakehouse_table' variable as shown below:
 
-![image](https://github.com/danhas14/Fabric_AzureOpenAI_Example/assets/27227060/51330781-d83e-4d7b-a9c6-33e2533fe136)
-
+![image](https://github.com/danhas14/Fabric_AzureOpenAI_Example/assets/27227060/226f48c0-b71e-485c-bfbd-b6d54012293a)
 
 
 Now run the first 3 cells in the notebook one at a time. Note it may take a minute for the Fabric Spark engine to initialize the first time you run it. The first cell will import the OpenAI library used in the notebook while the second cell will specify some categories we want Azure OpenAI to use to categorize the reviews. The third cell will load the data from our lakehouse table into a Spark dataframe.
