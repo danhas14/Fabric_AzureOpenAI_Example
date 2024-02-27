@@ -88,13 +88,13 @@ In the first cell of the notebook, paste the URL you copied to the text file abo
 ![image](https://github.com/danhas14/Fabric_AzureOpenAI_Example/assets/27227060/582a6e2a-6b8e-4e54-917c-d3ae412352f3)
 
 
-Now run the first four cell in the notebook one at a time. Note it may take a minute for the Fabric Spark engine to initialize the first time you run it. The second cell will import the OpenAI library used in the notebook while the third cell will specify some categories we want Azure OpenAI to use to categorize the reviews. The fourth cell will load the data from our lakehouse table into a Spark dataframe.
+Now run the first four cells in the notebook one at a time. Note it may take a minute for the Fabric Spark engine to initialize the first time you run it. The second cell will import the OpenAI library used in the notebook while the third cell will specify some categories we want Azure OpenAI to use to categorize the reviews. The fourth cell will load the data from our lakehouse table into a Spark dataframe.
 
 
 ![image](https://github.com/danhas14/Fabric_AzureOpenAI_Example/assets/27227060/5366ccb4-f321-40ee-8f14-46a6cf6781bb)
 
 
-Now run the fifth cell. This cell will loop through each row in the table and then ask Azure OpenAI to provide any topics relevant to the review along with an overall sentiment. You can see the prompt, or instructions, provided to Azure OpenAI on line 25-31 of the cell. Note we didn't have to provide an Azure OpenAI URL to call or a key since Fabric takes care of all of that for us. We just provide the Azure OpenAI model we want to use, which is gpt-35-turbo in this case. Lines 78-84 of the notebook do a Delta 'merge' command to merge the new topics and sentiment returned by Azure OpenAI back into the existing table based using the unique _unit_id column as a key. Note that this process is single-threaded, so larger tables may take awhile to run. It may be better in some cases to filter specific rows you need to send to Azure OpenAI.
+Now run the fifth cell. This cell will loop through each row in the table and then ask Azure OpenAI to provide any topics relevant to the review along with an overall sentiment. You can see the prompt, or instructions, provided to Azure OpenAI on line 25-31 of the cell. Note we didn't have to provide an Azure OpenAI URL to call or a key since Fabric takes care of all of that for us. We just provide the Azure OpenAI model we want to use, which is gpt-35-turbo in this case. Lines 78-84 of the notebook do a Delta 'merge' command to merge the new topics and sentiment returned by Azure OpenAI back into the existing table based using the unique _unit_id column as a key. Note that this process is single-threaded, so larger tables may take awhile to run. It may be better in some cases to filter just the specific rows you need to send to Azure OpenAI.
 
 
 ![image](https://github.com/danhas14/Fabric_AzureOpenAI_Example/assets/27227060/17933fcf-f909-4d31-8f3a-697a598ff9ad)
