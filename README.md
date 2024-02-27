@@ -88,7 +88,7 @@ In the first cell of the notebook, paste the URL you copied to the text file abo
 ![image](https://github.com/danhas14/Fabric_AzureOpenAI_Example/assets/27227060/582a6e2a-6b8e-4e54-917c-d3ae412352f3)
 
 
-Now run the first four cells in the notebook one at a time. Note it may take a minute for the Fabric Spark engine to initialize the first time you run it. The second cell will import the OpenAI library used in the notebook while the third cell will specify some categories we want Azure OpenAI to use to categorize the reviews. The fourth cell will load the data from our lakehouse table into a Spark dataframe.
+Now run the first four cells in the notebook one at a time. Note it may take a minute for the Fabric Spark engine to initialize the first time you run it. The second cell will import the OpenAI library used in the notebook while the third cell will specify some categories we want Azure OpenAI to use to categorize the reviews. Note that we didn't have to train Azure OpenAI on what the categories represent ahead of time and you can add new ones to the list if you would like. The fourth cell will load the data from our lakehouse table into a Spark dataframe.
 
 
 ![image](https://github.com/danhas14/Fabric_AzureOpenAI_Example/assets/27227060/5366ccb4-f321-40ee-8f14-46a6cf6781bb)
