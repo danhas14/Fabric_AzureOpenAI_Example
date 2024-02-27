@@ -46,10 +46,6 @@ Select 'Load'
 
 Now select the Tables folder in the lakehouse and right click and select 'Refresh'. There should be a new mcdonalds_reviews table created from the CSV. 
 
-
-https://github.com/danhas14/Fabric_AzureOpenAI_Example/blob/main/README.md
-
-
 Note the table will have blanks in the review_topic column and review_sentiment columns. We will have OpenAI populate the data for those columns in just a minute.
 
 
