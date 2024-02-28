@@ -11,7 +11,7 @@ https://learn.microsoft.com/en-us/fabric/data-science/ai-services/ai-services-ov
 
 This tutorial will walk you through implementing a simple use-case leveraging the Fabric native Azure OpenAI endpoint. Note that you will need a workspace in a Power BI Premium capacity or a Fabric F-SKU (F64 and above) in order to use the built-in Azure AI services. If you don't see some of the options mentioned in the tutorial, you may need to ensure Fabric is [enabled](https://learn.microsoft.com/en-us/fabric/admin/fabric-switch) for your tenant. The data in the tutorial is from an open dataset that contains sample reviews for a McDonald's restaurant. 
 
-To start, open up Microsoft Fabric and create a new Lakehouse by selecting 'Create' in the top left hand corner and then selecting 'Lakehouse' as shown in the image
+To start, open up Microsoft Fabric (www.powerbi.com) and create a new Lakehouse by selecting 'Create' in the top left hand corner and then selecting 'Lakehouse' as shown in the image
 
 <img width="785" alt="image" src="https://github.com/danhas14/Fabric_AzureOpenAI_Example/assets/27227060/2f222d8f-ef5e-4b70-9a20-d0a045ef3355">
 
