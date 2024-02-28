@@ -83,7 +83,7 @@ Now select and open the notebook you just imported to open it in Fabric.
 <img width="524" alt="image" src="https://github.com/danhas14/Fabric_AzureOpenAI_Example/assets/27227060/76a6a98a-6686-4ef7-8539-4cd89dfdd2df">
 
 
-On the left hand side, select 'Lakehouses' to associate our Reviews_Lakehouse with the notebook. At the prompt, select 'Existing Lakehouse', then 'Reviews_Lakehouse'. You should see something like below:
+On the left hand side, select 'Lakehouses' to associate our Reviews_Lakehouse with the notebook. Select 'Add' to add a lakehouse, then At the prompt, 'Existing Lakehouse', then check 'Reviews_Lakehouse' and select 'Add'. You should see something like below:
 
 
 ![image](https://github.com/danhas14/Fabric_AzureOpenAI_Example/assets/27227060/3808071a-a26b-4163-9870-43b291a94bba)
