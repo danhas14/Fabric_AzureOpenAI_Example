@@ -86,7 +86,8 @@ Now select and open the notebook you just imported to open it in Fabric.
 On the left hand side, select 'Lakehouses' to associate our Reviews_Lakehouse with the notebook. Select 'Add' to add a lakehouse, then At the prompt, 'Existing Lakehouse', then check 'Reviews_Lakehouse' and select 'Add'. You should see something like below:
 
 
-![image](https://github.com/danhas14/Fabric_AzureOpenAI_Example/assets/27227060/3808071a-a26b-4163-9870-43b291a94bba)
+![image](https://github.com/danhas14/Fabric_AzureOpenAI_Example/assets/27227060/9cc353d3-1c88-49e0-b636-b79a4eb91c44)
+
 
 In the first cell of the notebook, paste the URL you copied to the text file above as the value for the 'lakehouse_table' variable as shown below:
 
